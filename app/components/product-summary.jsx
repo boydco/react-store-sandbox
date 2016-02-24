@@ -1,0 +1,19 @@
+import React, {Component} from 'react'
+import {Link} from 'react-router'
+
+export default class ProductSummary extends Component {
+  render() {
+    const name = this.props.product.get('name')
+    const price = this.props.product.get('price')
+    const id = this.props.product.get('id')
+    return (
+      <div className='product'>
+        <div>{name}</div>
+        <div>${price}</div>
+        <div>
+          <Link to={`/products/${id}`}>View Details</Link>
+        </div>
+      </div>
+    )
+  }
+}

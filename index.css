@@ -1,0 +1,22 @@
+main {
+  text-align: center;
+}
+#productList .product {
+  margin-bottom:20px;
+}
+
+#main {
+  width: 75%;
+  float: left;
+}
+#side {
+  width: 25%;
+  float: right;
+
+}
+
+#wishlist {
+  width: 40%;
+  float: right;
+  margin-top: 8%;
+  margin-right: -15%
